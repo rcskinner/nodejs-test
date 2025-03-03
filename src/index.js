@@ -1,3 +1,7 @@
+// Datadog Instrumentation Imports
+const tracer = require('dd-trace').init({
+    logInjection: true
+});
 const express = require('express');
 const pino = require('pino');
 const fs = require('fs');

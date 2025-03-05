@@ -7,13 +7,14 @@ Written to test out a log injection question / learn a little more about NodeJS
 
 ```
 //install the required packages 
-node install 
+npm install --only=production
+npm install --save-dev esbuild
 
 // use the build step to bundle the API with ESBuild
-node build
+node build.mjs
 
 // start the API 
-node start
+node dist/bundle.js
 ```
 
 ### Running the API - Containerized
